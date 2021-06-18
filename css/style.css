@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  font-size: 120%;
+}
+
+.section {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  overflow: hidden;
+}
+
+.section.section--center {
+  text-align: center;
+  place-items: center;
+}
+
+.emoji {
+  display: inline-block;
+  font-size: 120px;
+  margin: 0;
+}
+
+.emoji--large {
+  font-size: 200px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.layout__item--40 {
+  width: 40%;
+}
+
+.layout__item--60 {
+  width: 60%;
+}
+
+.fixed__wrapper {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.fixed__item {
+  position: absolute;
+  top: -100vh;
+  right: 0;
+  left: 0;
+  bottom: -100vh;
+}
+
+.fixed__item--bg {
+  background-image: url("/assets/mtpleasant.jpeg");
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  opacity: 0.75;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: -100vh;
+  right: 0;
+  left: 0;
+}
+
+.lyrics__sticky {
+  background: #fff;
+  position: relative;
+  z-index: 9;
+  font-size: 300%;
+}
+
+.lyrics p.lyrics__opac {
+  opacity: 0.2;
+  margin-top: -40px;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
