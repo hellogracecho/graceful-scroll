@@ -64,7 +64,7 @@ h1 {
 }
 
 .fixed__item--bg {
-  background-image: url("/assets/mtpleasant.jpeg");
+  background-image: url("https://images.unsplash.com/photo-1565769583690-7da5b32d5778?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyNDA1NDU3OQ&ixlib=rb-1.2.1&q=85");
   height: 100%;
   background-size: cover;
   background-position: 50%;
