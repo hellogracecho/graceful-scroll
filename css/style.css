@@ -17,6 +17,10 @@ body {
   place-items: center;
 }
 
+.section.section--77 {
+  height: calc((100vh - 3rem) * 0.7777777777777778);
+}
+
 .emoji {
   display: inline-block;
   font-size: 120px;
@@ -68,7 +72,6 @@ h1 {
   height: 100%;
   background-size: cover;
   background-position: 50%;
-  opacity: 0.75;
   mix-blend-mode: multiply;
   position: absolute;
   top: -100vh;
@@ -78,6 +81,21 @@ h1 {
 
 .fixed__item--bg.fixed__item--bg-colour {
   background: coral;
+}
+
+.fixed__item--bg.fixed__item--bg-colour-2 {
+  background: lavender;
+}
+
+.fixed__item--full {
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: -100vh;
+  right: 0;
+  left: 0;
 }
 
 .lyrics__sticky {
@@ -106,5 +124,14 @@ h1 {
   background-blend-mode: overlay;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#808080), color-stop(#666), color-stop(#999), to(#808080)), url(/assets/noise.png);
   background-image: linear-gradient(to top, #808080, #666 calc(40%), #999 calc(40%), #808080), url(/assets/noise.png);
+}
+
+.text-fixed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9;
 }
 /*# sourceMappingURL=style.css.map */

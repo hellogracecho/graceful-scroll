@@ -24,24 +24,36 @@
 <body>
     <div data-scroll-container>
         <div class="just-say-when">
-            <div class="section section--center bg--wheat" data-scroll-section>
+            <div class="section section--center section--77 bg--wheat" data-scroll-section>
                 <h1>Chai Made for Sharing</h1>
             </div>
 
+            <!-- TODO: test fixed and scroll -->
+            <div class="section bg--noise" style="background-color:#e86648;background-blend-mode:overlay"
+                data-scroll-section>
+                <div class="text-fixed">
+                    <h1>just say when</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, modi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga, error asperiores soluta
+                        quidem mollitia. Veritatis voluptatibus repellendus illo, dolorem praesentium voluptatum saepe,
+                        corporis modi totam porro culpa qui laudantium.</p>
+                    <img src="assets/Spicy-carton.png" alt="">
+                </div>
+            </div>
+
+            <!-- TODO: test fixed and scroll -->
             <div class="section" data-scroll-section>
-                <div class="layout">
-                    <div class="layout__item layout__item--40 section section--center">
-                        <h2>fixed item and contents go here...</h2>
-                    </div>
-                    <div class="layout__item layout__item--60">
-                        <div data-scroll data-scroll-repeat class="fixed__wrapper">
-                            <div class="fixed__item" id="sticky-bg-image"></div>
-                            <div class="fixed__item--bg fixed__item--bg-colour" data-scroll data-scroll-sticky
-                                data-scroll-target="#sticky-bg-image">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, ducimus!</p>
-                                </div>
-                            </div>
+                <div data-scroll data-scroll-repeat class="fixed__wrapper">
+                    <div class="fixed__item" id="sticky-chai"></div>
+                    <div class="fixed__item--full bg--noise"
+                        style="background-color:#59d559;background-blend-mode:overlay" data-scroll data-scroll-sticky
+                        data-scroll-target="#sticky-chai">
+                        <div class="text-fixed">
+                            <img src="assets/Spicy-carton.png" alt="">
+                            <h1>Fixed inside on sticky item</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente quibusdam
+                                soluta, suscipit voluptates minima itaque ratione delectus possimus nisi. Tenetur modi
+                                harum voluptates rerum voluptatibus culpa, est dolorem veniam.</p>
                         </div>
                     </div>
                 </div>
@@ -49,46 +61,45 @@
 
             <div class="section section--center bg--noise"
                 style="background-color:#e86648;background-blend-mode:overlay" data-scroll-section>
-                <img src="assets/spicy-carton.png" alt="">
+                <img src="assets/Spicy-carton.png" alt="">
             </div>
-        </div>
 
-        <div class="section" data-scroll-section>
-            <div class="layout">
-                <div class="layout__item layout__item--40 section section--center">
-                    <h2>How you doin'?</h2>
-                </div>
-                <div class="layout__item layout__item--60">
-                    <div data-scroll data-scroll-repeat class="fixed__wrapper">
-                        <div class="fixed__item" id="sticky-bg-image"></div>
-                        <div class="fixed__item--bg" data-scroll data-scroll-sticky
-                            data-scroll-target="#sticky-bg-image">
+            <div class="section" data-scroll-section>
+                <div class="layout">
+                    <div class="layout__item layout__item--40 section section--center">
+                        <h2>How you doin'?</h2>
+                    </div>
+                    <div class="layout__item layout__item--60">
+                        <div data-scroll data-scroll-repeat class="fixed__wrapper">
+                            <div class="fixed__item" id="sticky-bg-image"></div>
+                            <div class="fixed__item--bg" data-scroll data-scroll-sticky
+                                data-scroll-target="#sticky-bg-image">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="section section--center" data-scroll-section id="sticky-emoji">
-            <h2 data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal" class="text-center">sick and
-                tired of COVID19?</h2>
-            <p data-scroll class="emoji emoji--large" data-scroll-sticky data-scroll-target="#sticky-emoji">😷</p>
-            <h2 data-scroll data-scroll-speed="7" data-scroll-direction="horizontal" class="text-center">feeling
-                burnout?</h2>
-        </div>
-
-        <div class="section section--center" data-scroll-section>
-            <div>
-                <h2 data-scroll data-scroll-speed="9">I got you back</h2>
-                <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="12" style="margin-left: 20vw;"
-                    class="emoji">🍑
-                </p>
+            <div class="section section--center" data-scroll-section id="sticky-emoji">
+                <h2 data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal" class="text-center">sick and
+                    tired of COVID19?</h2>
+                <p data-scroll class="emoji emoji--large" data-scroll-sticky data-scroll-target="#sticky-emoji">😷</p>
+                <h2 data-scroll data-scroll-speed="7" data-scroll-direction="horizontal" class="text-center">feeling
+                    burnout?</h2>
             </div>
-        </div>
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script type="module" src="js/app.js"></script>
+            <div class="section section--center bg--wheat" data-scroll-section>
+                <div>
+                    <h2 data-scroll data-scroll-speed="9">I got you back</h2>
+                    <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="12" style="margin-left: 20vw;"
+                        class="emoji">🍑
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+        <script type="module" src="js/app.js"></script>
 </body>
 
 </html>
