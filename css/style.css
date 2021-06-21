@@ -76,6 +76,10 @@ h1 {
   left: 0;
 }
 
+.fixed__item--bg.fixed__item--bg-colour {
+  background: coral;
+}
+
 .lyrics__sticky {
   background: #fff;
   position: relative;
@@ -88,5 +92,19 @@ h1 {
   margin-top: -40px;
   font-size: 1.5rem;
   margin-bottom: 0;
+}
+
+.bg--wheat {
+  background-color: wheat;
+}
+
+.bg--coral {
+  background-color: #e86648;
+}
+
+.bg--noise {
+  background-blend-mode: overlay;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#808080), color-stop(#666), color-stop(#999), to(#808080)), url(/assets/noise.png);
+  background-image: linear-gradient(to top, #808080, #666 calc(40%), #999 calc(40%), #808080), url(/assets/noise.png);
 }
 /*# sourceMappingURL=style.css.map */
