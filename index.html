@@ -7,10 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graceful Scroll</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="css/locomotive-scoll.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -22,84 +29,96 @@
 </head>
 
 <body>
-    <div data-scroll-container>
+    <div>
         <div class="just-say-when">
-            <div class="section section--center section--77 bg--wheat" data-scroll-section>
-                <h1>Chai Made for Sharing</h1>
-            </div>
-
-            <!-- TODO: test fixed and scroll -->
-            <div class="section bg--noise" style="background-color:#e86648;background-blend-mode:overlay"
-                data-scroll-section>
-                <div class="text-fixed">
-                    <h1>just say when</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, modi!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga, error asperiores soluta
-                        quidem mollitia. Veritatis voluptatibus repellendus illo, dolorem praesentium voluptatum saepe,
-                        corporis modi totam porro culpa qui laudantium.</p>
-                    <img src="assets/Spicy-carton.png" alt="">
-                </div>
-            </div>
-
-            <!-- TODO: test fixed and scroll -->
-            <div class="section" data-scroll-section>
-                <div data-scroll data-scroll-repeat class="fixed__wrapper">
-                    <div class="fixed__item" id="sticky-chai"></div>
-                    <div class="fixed__item--full bg--noise"
-                        style="background-color:#59d559;background-blend-mode:overlay" data-scroll data-scroll-sticky
-                        data-scroll-target="#sticky-chai">
-                        <div class="text-fixed">
-                            <img src="assets/Spicy-carton.png" alt="">
-                            <h1>Fixed inside on sticky item</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente quibusdam
-                                soluta, suscipit voluptates minima itaque ratione delectus possimus nisi. Tenetur modi
-                                harum voluptates rerum voluptatibus culpa, est dolorem veniam.</p>
+            <!-- <div class="section section--center section--77 bg--wheat">
+                <h1 class="heading-welcome">Chai Made for Sharing</h1>
+            </div> -->
+            <!-- TODO: Slick slider -->
+            <div class="js-slider">
+                <div class="js-slider__single">
+                    <div class="section section--center bg--noise"
+                        style="background-color:#e86648; background-blend-mode:overlay">
+                        <div class="item">
+                            <div class="item__heading">
+                                <h2>Comin’ in hot! Black tea with bold spice.</h2>
+                            </div>
+                            <div class="item__img">
+                                <img class="item__img__left" src="assets/spicy-bg-left.png" alt="">
+                                <img src="assets/Spicy-carton.png" alt="">
+                            </div>
+                            <div class="item__info">
+                                <h2>Red One</h2>
+                                <h3>Lorem ipsum dolor sit.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente
+                                    quibusdam
+                                    soluta, suscipit voluptates minima itaque ratione delectus possimus nisi. Tenetur
+                                    modi
+                                    harum voluptates rerum voluptatibus culpa, est dolorem veniam.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="section section--center bg--noise"
-                style="background-color:#e86648;background-blend-mode:overlay" data-scroll-section>
-                <img src="assets/Spicy-carton.png" alt="">
-            </div>
-
-            <div class="section" data-scroll-section>
-                <div class="layout">
-                    <div class="layout__item layout__item--40 section section--center">
-                        <h2>How you doin'?</h2>
+                <div class="js-slider__single">
+                    <div class="section section--center bg--noise"
+                        style="background-color:#284aee; background-blend-mode:overlay">
+                        <div class="item">
+                            <div class="item__heading">
+                                <h2>It’s the real deal. Period.</h2>
+                            </div>
+                            <div class="item__img">
+                                <img class="item__img__left" src="assets/authentic-bg-left.png" alt="">
+                                <img src="assets/Authentic-carton.png" alt="">
+                            </div>
+                            <div class="item__info">
+                                <h2>Blue one</h2>
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente
+                                    quibusdam
+                                    soluta, suscipit voluptates minima itaque ratione delectus possimus nisi. Tenetur
+                                    modi
+                                    harum voluptates rerum voluptatibus culpa, est dolorem veniam.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="layout__item layout__item--60">
-                        <div data-scroll data-scroll-repeat class="fixed__wrapper">
-                            <div class="fixed__item" id="sticky-bg-image"></div>
-                            <div class="fixed__item--bg" data-scroll data-scroll-sticky
-                                data-scroll-target="#sticky-bg-image">
+                </div>
+
+                <div class="js-slider__single">
+                    <div class="section section--center bg--noise"
+                        style="background-color:#f5a421; background-blend-mode:overlay">
+                        <div class="item">
+                            <div class="item__heading">
+                                <h2>Our golden child. Ginger, turmeric & sweet honey.</h2>
+                            </div>
+                            <div class="item__img">
+                                <img class="item__img__left" src="assets/golden-bg-left.png" alt="">
+                                <img src="assets/Golden-carton.png" alt="">
+                            </div>
+                            <div class="item__info">
+                                <h2>Yellow one</h2>
+                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente
+                                    quibusdam
+                                    soluta, suscipit voluptates minima itaque ratione delectus possimus nisi. Tenetur
+                                    modi
+                                    harum voluptates rerum voluptatibus culpa, est dolorem veniam.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="section section--center" data-scroll-section id="sticky-emoji">
-                <h2 data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal" class="text-center">sick and
-                    tired of COVID19?</h2>
-                <p data-scroll class="emoji emoji--large" data-scroll-sticky data-scroll-target="#sticky-emoji">😷</p>
-                <h2 data-scroll data-scroll-speed="7" data-scroll-direction="horizontal" class="text-center">feeling
-                    burnout?</h2>
-            </div>
-
-            <div class="section section--center bg--wheat" data-scroll-section>
-                <div>
-                    <h2 data-scroll data-scroll-speed="9">I got you back</h2>
-                    <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="12" style="margin-left: 20vw;"
-                        class="emoji">🍑
-                    </p>
-                </div>
+            <div class="js-options-slider-nav">
+                <button class="js-options-slider-prev">Left</button>
+                <button class="js-options-slider-next">Right</button>
             </div>
 
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-        <script type="module" src="js/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/app.js"></script>
 </body>
 
 </html>
