@@ -19,10 +19,3 @@ if ($slider.length) {
     rows: 0,
   });
 }
-
-// On slide change
-$slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-  console.log(currentSlide);
-  $('.slick-slide').removeClass('is-active');
-  $('.slick-current').addClass('is-active');
-});
