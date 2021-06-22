@@ -11,7 +11,7 @@ if ($slider.length) {
       .siblings('.js-options-slider-nav')
       .children('.js-options-slider-next'),
     fade: true,
-    speed: 900,
+    speed: 700,
     cssEase: 'linear',
     autoplay: false,
     slidesToShow: 1,
