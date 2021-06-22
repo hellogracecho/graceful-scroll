@@ -10,6 +10,7 @@ if ($slider.length) {
     nextArrow: $slider
       .siblings('.js-options-slider-nav')
       .children('.js-options-slider-next'),
+    dots: true,
     fade: true,
     speed: 700,
     cssEase: 'linear',
@@ -19,3 +20,6 @@ if ($slider.length) {
     rows: 0,
   });
 }
+
+// TODO: work on slick dots with item box image replacement
+// ref: https://addwebsolution.com/blog/custom-nextprev-thumb-slick-slider

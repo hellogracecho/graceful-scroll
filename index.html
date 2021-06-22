@@ -29,96 +29,163 @@
 </head>
 
 <body>
-    <div>
+    <header>
+        <a class="logo" href="">
+            <svg viewBox="0 0 120 120">
+                <path
+                    d="M59.705 120C26.784 120 0 93.084 0 60S26.784 0 59.705 0c32.923 0 59.707 26.916 59.707 60s-26.784 60-59.707 60"
+                    fill="#262626"></path>
+                <path
+                    d="M43.27 38.581c0-6.19 7.854-10.99 11.727-11.288 1.645-.12 2.334.57 2.334 1.63 0 3.133-5.783 9.76-9.18 9.96-.794.05-1.537-.702-1.856-.683-.371.022-.637.726-.637 1.68 0 2.171 1.22 5.556 4.775 5.326C55.951 44.853 62 34.76 62 30.463c0-4.034-2.918-6.847-9.02-6.42-6.207.455-15.545 6.035-15.545 15.192 0 5.884 1.538 9.103 1.538 13.608 0 4.452-4.63 9.528-10.042 9.672-3.767.099-5.306-2.167-5.306-5.026 0-4.667 4.191-10.872 9.55-11.063.743-.026 2.509.464 2.509.038 0-.954-1.698-2.527-4.032-2.451C23.11 44.298 16 54.13 16 61.183c0 6.618 4.775 12.013 12.574 11.812 10.558-.29 17.35-9.873 17.35-19.4 0-5.883-2.653-9.764-2.653-15.014M104.6 50.516c1.056-.097 2.147.265 3.168 1.202.14.165.317.22.458.208.457-.038.774-.912.774-2.007 0-2.153-1.232-5.241-5.034-4.892-11.547 1.085-20.665 32.797-27.74 33.682-1.303.165-1.83-.685-1.83-2.134 0-5.267 6.934-18.229 10.42-18.64.352-.042.492-.2.492-.412 0-.742-1.69-2.201-3.38-1.994-4.928.594-13.24 14.57-21.302 22.238 5.633-9.535 12.194-28.658 17.299-29.31.21-.027.317-.182.316-.394 0-.424-.387-.975-1.02-.894-15.983 2.079-26.896 8.875-26.896 14.793 0 2.261 1.865 3.723 4.118 3.433 2.852-.367 4.507-3.375 4.507-4.576 0-.354-.141-.547-.387-.515-1.55.201-2.253-.238-2.253-1.015 0-2.153 5.561-6.977 15.56-8.92-6.478 6.99-14.303 29.603-20.287 30.374-1.936.25-2.992-1.136-2.992-2.407 0-.601-.246-.853-.599-.808-1.021.13-2.992 2.603-2.992 5.64 0 3.004 2.393 5.18 5.457 4.786 7.076-.908 14.08-8.87 19.82-16.432-2.219 4.068-3.909 8.106-3.909 10.825 0 3.11 2.113 5.059 4.789 4.713 13.342-1.733 24.325-35.715 33.443-36.544"
+                    fill="#f3e9d8"></path>
+            </svg>
+        </a>
+    </header>
+    <main>
         <div class="just-say-when">
-            <!-- <div class="section section--center section--77 bg--wheat">
+            <div class="section section--center section--77" style="background:#f3e9d8;" id="intro">
                 <h1 class="heading-welcome">Chai Made for Sharing</h1>
-            </div> -->
-            <!-- TODO: Slick slider -->
-            <div class="js-slider">
-                <div class="js-slider__single">
-                    <div class="section section--center bg--noise"
-                        style="background-color:#e86648; background-blend-mode:overlay; color: #262626;">
-                        <div class="item">
-                            <div class="item__heading">
-                                <h2>Comin’ in hot! Black tea with bold spice.</h2>
+            </div>
+
+            <!-- Slick slider -->
+            <div class="section__sticky-1">
+                <div class="js-slider" id="second">
+                    <div class="js-slider__single">
+                        <div class="section section--center bg--noise"
+                            style="background-color:#e86648; background-blend-mode:overlay; color: #262626;">
+                            <div class="item">
+                                <div class="item__heading">
+                                    <h2>Comin’ in hot! Black tea with bold spice.</h2>
+                                </div>
+                                <div class="item__img">
+                                    <img class="item__img__left" src="assets/spicy-bg-left.png" alt="">
+                                    <img src="assets/Spicy-carton.png" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <h2>Red One</h2>
+                                    <h3>Lorem ipsum dolor sit.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente
+                                        quibusdam
+                                        soluta, suscipit voluptates minima itaque ratione delectus possimus nisi.
+                                        Tenetur
+                                        modi
+                                        harum voluptates rerum voluptatibus culpa, est dolorem veniam.</p>
+                                </div>
                             </div>
-                            <div class="item__img">
-                                <img class="item__img__left" src="assets/spicy-bg-left.png" alt="">
-                                <img src="assets/Spicy-carton.png" alt="">
+                        </div>
+                    </div>
+                    <div class="js-slider__single">
+                        <div class="section section--center bg--noise"
+                            style="background-color:#284aee; background-blend-mode:overlay; color: #f3e9d8;">
+                            <div class="item">
+                                <div class="item__heading">
+                                    <h2>It’s the real deal. Period.</h2>
+                                </div>
+                                <div class="item__img">
+                                    <img class="item__img__left" src="assets/authentic-bg-left.png" alt="">
+                                    <img src="assets/Authentic-carton.png" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <h2>Blue one</h2>
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente
+                                        quibusdam
+                                        soluta, suscipit voluptates minima itaque ratione delectus possimus nisi.
+                                        Tenetur
+                                        modi
+                                        harum voluptates rerum voluptatibus culpa, est dolorem veniam.</p>
+                                </div>
                             </div>
-                            <div class="item__info">
-                                <h2>Red One</h2>
-                                <h3>Lorem ipsum dolor sit.</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente
-                                    quibusdam
-                                    soluta, suscipit voluptates minima itaque ratione delectus possimus nisi. Tenetur
-                                    modi
-                                    harum voluptates rerum voluptatibus culpa, est dolorem veniam.</p>
+                        </div>
+                    </div>
+                    <div class="js-slider__single">
+                        <div class="section section--center bg--noise"
+                            style="background-color:#f5a421; background-blend-mode:overlay; color: #262626;">
+                            <div class="item">
+                                <div class="item__heading">
+                                    <h2>Our golden child. Ginger, turmeric & sweet honey.</h2>
+                                </div>
+                                <div class="item__img">
+                                    <img class="item__img__left" src="assets/golden-bg-left.png" alt="">
+                                    <img src="assets/Golden-carton.png" alt="">
+                                </div>
+                                <div class="item__info">
+                                    <h2>Yellow one</h2>
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente
+                                        quibusdam
+                                        soluta, suscipit voluptates minima itaque ratione delectus possimus nisi.
+                                        Tenetur
+                                        modi
+                                        harum voluptates rerum voluptatibus culpa, est dolorem veniam.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="js-slider__single">
-                    <div class="section section--center bg--noise"
-                        style="background-color:#284aee; background-blend-mode:overlay; color: #f3e9d8;">
-                        <div class="item">
-                            <div class="item__heading">
-                                <h2>It’s the real deal. Period.</h2>
-                            </div>
-                            <div class="item__img">
-                                <img class="item__img__left" src="assets/authentic-bg-left.png" alt="">
-                                <img src="assets/Authentic-carton.png" alt="">
-                            </div>
-                            <div class="item__info">
-                                <h2>Blue one</h2>
-                                <h3>Lorem ipsum dolor sit amet.</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente
-                                    quibusdam
-                                    soluta, suscipit voluptates minima itaque ratione delectus possimus nisi. Tenetur
-                                    modi
-                                    harum voluptates rerum voluptatibus culpa, est dolorem veniam.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="js-options-slider-nav">
+                    <!-- TODO: svg fill = match to current colour -->
+                    <button class="js-options-slider-prev">
+                        <svg viewBox="0 0 24 24" focusable="false" role="presentation" aria-hidden="true"
+                            class="css-1im46kq">
+                            <path fill="#fff" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="js-options-slider-next">
+                        <svg viewBox="0 0 24 24" focusable="false" role="presentation" aria-hidden="true"
+                            class="css-1im46kq">
+                            <path fill="#fff" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
+                            </path>
+                        </svg>
+                    </button>
                 </div>
+            </div>
+            <!-- END: Slick slider -->
 
-                <div class="js-slider__single">
-                    <div class="section section--center bg--noise"
-                        style="background-color:#f5a421; background-blend-mode:overlay; color: #262626;">
-                        <div class="item">
-                            <div class="item__heading">
-                                <h2>Our golden child. Ginger, turmeric & sweet honey.</h2>
-                            </div>
-                            <div class="item__img">
-                                <img class="item__img__left" src="assets/golden-bg-left.png" alt="">
-                                <img src="assets/Golden-carton.png" alt="">
-                            </div>
-                            <div class="item__info">
-                                <h2>Yellow one</h2>
-                                <h3>Lorem ipsum dolor sit amet.</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente
-                                    quibusdam
-                                    soluta, suscipit voluptates minima itaque ratione delectus possimus nisi. Tenetur
-                                    modi
-                                    harum voluptates rerum voluptatibus culpa, est dolorem veniam.</p>
-                            </div>
-                        </div>
+            <div class="section__sticky-2 section section--center bg--noise"
+                style="background-color:#284aee; background-blend-mode:overlay; color: #f3e9d8;">
+                <div class="item">
+                    <div class="item__heading">
+                        <h2>It’s the real deal. Period.</h2>
+                    </div>
+                    <div class="item__img">
+                        <img class="item__img__left" src="assets/authentic-bg-left.png" alt="">
+                        <img src="assets/Authentic-carton.png" alt="">
+                    </div>
+                    <div class="item__info">
+                        <h2>Blue one</h2>
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente
+                            quibusdam
+                            soluta, suscipit voluptates minima itaque ratione delectus possimus nisi. Tenetur
+                            modi
+                            harum voluptates rerum voluptatibus culpa, est dolorem veniam.</p>
                     </div>
                 </div>
             </div>
-            <div class="js-options-slider-nav">
-                <button class="js-options-slider-prev">Left</button>
-                <button class="js-options-slider-next">Right</button>
+
+            <div class="section section--center section--77" style="background:#91cfc4;">
+                <h1 class="heading-welcome">Chai Made for Sharing</h1>
             </div>
 
+            <div class="section section--center section--77" style="background:#f5a421;">
+                <h1 class="heading-welcome">Chai Made for Sharing</h1>
+            </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="js/app.js"></script>
+
+        <a href="" class="arrow-down">
+            <svg viewBox="0 0 24 24" focusable="false" role="presentation" class="css-sbxenn">
+                <path fill="#fff" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+            </svg>
+        </a>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
