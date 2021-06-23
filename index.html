@@ -57,9 +57,9 @@
                                 <div class="item__heading">
                                     <h2>Comin’ in hot! Black tea with bold spice.</h2>
                                 </div>
-                                <div class="item__img">
+                                <div class="item__img" data-item-nav="assets/Spicy-carton.png">
                                     <img class="item__img__left" src="assets/spicy-bg-left.png" alt="">
-                                    <img src="assets/Spicy-carton.png" alt="">
+                                    <img class="item__img__carton" src="assets/Spicy-carton.png" alt="">
                                 </div>
                                 <div class="item__info">
                                     <h2>Red One</h2>
@@ -81,9 +81,9 @@
                                 <div class="item__heading">
                                     <h2>It’s the real deal. Period.</h2>
                                 </div>
-                                <div class="item__img">
+                                <div class="item__img" data-item-nav="assets/Authentic-carton.png">
                                     <img class="item__img__left" src="assets/authentic-bg-left.png" alt="">
-                                    <img src="assets/Authentic-carton.png" alt="">
+                                    <img class="item__img__carton" src="assets/Authentic-carton.png" alt="">
                                 </div>
                                 <div class="item__info">
                                     <h2>Blue one</h2>
@@ -105,9 +105,9 @@
                                 <div class="item__heading">
                                     <h2>Our golden child. Ginger, turmeric & sweet honey.</h2>
                                 </div>
-                                <div class="item__img">
+                                <div class="item__img" data-item-nav="assets/Golden-carton.png">
                                     <img class="item__img__left" src="assets/golden-bg-left.png" alt="">
-                                    <img src="assets/Golden-carton.png" alt="">
+                                    <img class="item__img__carton" src="assets/Golden-carton.png" alt="">
                                 </div>
                                 <div class="item__info">
                                     <h2>Yellow one</h2>
@@ -123,6 +123,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Slider Nav Arrows -->
                 <div class="js-options-slider-nav">
                     <!-- TODO: svg fill = match to current colour -->
                     <button class="js-options-slider-prev">
@@ -140,8 +141,14 @@
                         </svg>
                     </button>
                 </div>
+                <!-- Slider Nav with Product Images -->
+                <div class="item-nav">
+                    <button id="item-nav__prev">Prev</button>
+                    <button id="item-nav__next">Next</button>
+                </div>
             </div>
             <!-- END: Slick slider -->
+
 
             <div class="section__sticky-2 section section--center bg--noise"
                 style="background-color:#284aee; background-blend-mode:overlay; color: #f3e9d8;">

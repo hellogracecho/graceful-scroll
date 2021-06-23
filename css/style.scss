@@ -86,6 +86,7 @@ h3 {
 .item {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
+  z-index: 5;
   * {
     transition: all 1.8s ease;
   }
@@ -107,14 +108,42 @@ h3 {
     &__left {
       position: absolute;
       right: 50%;
-      z-index: 1;
+      z-index: 11;
       transform: translate(-100px, 0);
     }
     img:not(.item__img__left) {
       position: relative;
-      z-index: 2;
+      z-index: 12;
       // opacity: 0;
       transition: all 1.5s ease;
+    }
+  }
+}
+
+// TODO: Additional Slick nav button with carton image
+
+.item-nav {
+  z-index: 4;
+  button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: transform 250ms ease;
+
+    &#item-nav__prev {
+      right: calc(100% - 60px);
+      &:hover {
+        transform: translate(60px, -50%);
+      }
+    }
+    &#item-nav__next {
+      left: calc(100% - 60px);
+      &:hover {
+        transform: translate(-60px, -50%);
+      }
     }
   }
 }
