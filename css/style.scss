@@ -3,6 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
+
 h1,
 h2,
 h3,
@@ -259,12 +260,25 @@ h3 {
 
 // ** sticky and scroll
 .section__sticky-1 {
+  overflow-x: hidden;
   position: sticky;
   bottom: 0;
   z-index: 1;
 }
 .section__sticky-2 {
+  overflow-x: hidden;
   position: sticky;
   bottom: 0;
   height: 100vh;
+}
+
+.test {
+  background-image: linear-gradient(
+      to top,
+      #808080,
+      #666 calc(100% / 3),
+      #999 calc(100% / 3),
+      #808080
+    ),
+    url(./noise.png);
 }

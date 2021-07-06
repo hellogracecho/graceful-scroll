@@ -284,6 +284,7 @@ h3 {
 }
 
 .section__sticky-1 {
+  overflow-x: hidden;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
@@ -291,9 +292,15 @@ h3 {
 }
 
 .section__sticky-2 {
+  overflow-x: hidden;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   height: 100vh;
+}
+
+.test {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#808080), color-stop(#666), color-stop(#999), to(#808080)), url(./noise.png);
+  background-image: linear-gradient(to top, #808080, #666 calc(100% / 3), #999 calc(100% / 3), #808080), url(./noise.png);
 }
 /*# sourceMappingURL=style.css.map */

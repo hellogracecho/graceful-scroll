@@ -1,0 +1,43 @@
+// <h3>Organic Spicy Chai</h3>
+{
+    "bgc": "#e86648",
+    "color": "#262626"
+}
+
+// <h3>Organic Dirty Chai</h3>
+{
+    "bgc": "#91cfc4",
+"color": "#262626"
+}
+// <h3>Variety Pack</h3>
+{
+    "bgc": "#f3e9d8",
+"color": "#262626"
+}
+// <h3>Organic Golden Chai</h3>
+{
+    "bgc": "#f5a421",
+"color": "#262626"
+}
+
+//  ** More to Pour Series ** 
+// <h3>Organic Authentic Chai</h3>
+{
+    "bgc": "#284aee",
+"color": "#f3e9d8"
+}
+// <h3>Organic Grizzly Chai</h3>
+{
+    "bgc": "#b7afa5",
+"color": "#262626"
+}
+// <h3>Organic Oolong Chai</h3>
+{
+    "bgc": "#352b29",
+"color": "#f3e9d8"
+}
+// <h3>Organic Rooibos Chai</h3>
+{
+    "bgc": "#c9514d",
+"cpl": "#262626"
+}
